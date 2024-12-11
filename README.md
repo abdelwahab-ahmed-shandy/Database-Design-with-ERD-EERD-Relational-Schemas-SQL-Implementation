@@ -1,10 +1,11 @@
-# Entity-Relationship Diagram Projects
+# ER Diagrams And Relational Schemas
 
-Dive into the world of database design with this curated collection of **Entity-Relationship Diagrams (ERDs)**. Each project demonstrates real-world use cases, providing clear and visually engaging diagrams to help you master the art of database structuring. Perfect for students, developers, and database enthusiasts looking to create efficient and scalable databases.
+Dive into the world of database design with this curated collection of **Entity-Relationship Diagrams (ERDs)** and **Relational Schemas**. Each project demonstrates real-world use cases, providing clear and visually engaging diagrams to help you master the art of database structuring. Perfect for students, developers, and database enthusiasts looking to create efficient and scalable databases.
 
 ## 🎯 Project Goals
 
 - Understand how to analyze system requirements and convert them into an ERD.
+- Learn to design relational schemas from ERDs.
 - Improve database design skills.
 - Learn to use various tools to create diagrams (e.g., Draw.io, MySQL Workbench, etc.).
 
@@ -12,21 +13,24 @@ Dive into the world of database design with this curated collection of **Entity-
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/Abdelwahab-Shandy/Entity-Relationship-Diagram-Projects.git
+   git clone https://github.com/Abdelwahab-Shandy/ER-Diagrams-And-Relational-Schemas.git
    ```
 2. Browse the folders to select the desired project.
-3. Open the ERD files using the appropriate tool.
+3. Open the ERD or schema files using the appropriate tool.
 
 ## 🛠️ Tools Used
 
-- [Best website for database application](https://erdplus.com/)
+- [ERDPlus](https://erdplus.com/): Best website for database applications.
+- **MySQL Workbench**: For applying diagrams to databases.
+- **Draw.io**: For creating diagrams.
 
 ## 📚 Useful Resources
 
-- [The best Arabic to learn ERD](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
-- [Best Arabic Database Course](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
+- [The Best Arabic Guide to Learn ERD](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
+- [Comprehensive Arabic Database Course](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 
 ## 📫 Connect with Me
+
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
 [![Medium](https://img.shields.io/badge/-Medium-12100E?logo=medium&logoColor=white)](https://medium.com/@abdelwahabshandy)
 [![GitHub](https://img.shields.io/badge/-GitHub-333333?logo=github&logoColor=white)](https://github.com/abdelwahab-shandy)
