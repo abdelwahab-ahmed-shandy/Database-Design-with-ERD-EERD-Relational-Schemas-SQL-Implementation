@@ -19,34 +19,12 @@ Dive into the world of database design with this curated collection of **Entity-
 
 ## 🛠️ Tools Used
 
-- **Draw.io**: For creating diagrams.
-- **MySQL Workbench**: For applying diagrams to databases.
-- **Lucidchart**: For more professional designs.
+- [Best website for database application](https://erdplus.com/)
 
 ## 📚 Useful Resources
 
-- [Introduction to ERD](https://www.geeksforgeeks.org/introduction-of-er-model/)
-- [Best Practices for Database Design](https://www.databasejournal.com/)
-
-## 🤝 Contribution
-
-Contributions to improve this repository are welcome! You can:
-
-- Add new projects.
-- Enhance existing diagrams.
-- Provide new suggestions.
-
-To contribute:
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature/new-project
-   ```
-3. Push your changes:
-   ```bash
-   git push origin feature/new-project
-   ```
-4. Open a Pull Request.
+- [The best Arabic to learn ERD](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
+- [Best Arabic Database Course](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 
 ## 📫 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
