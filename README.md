@@ -2,15 +2,6 @@
 
 Dive into the world of database design with this curated collection of **Entity-Relationship Diagrams (ERDs)**. Each project demonstrates real-world use cases, providing clear and visually engaging diagrams to help you master the art of database structuring. Perfect for students, developers, and database enthusiasts looking to create efficient and scalable databases.
 
-## 📂 Repository Contents
-
-- **Project 1:** ERD for an e-commerce platform.
-- **Project 2:** ERD for a university management system.
-- **Project 3:** ERD for a hospital system.
-- **Project 4:** ERD for a hotel booking system.
-
-> The repository is continuously updated with new projects!
-
 ## 🎯 Project Goals
 
 - Understand how to analyze system requirements and convert them into an ERD.
