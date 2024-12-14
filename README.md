@@ -21,7 +21,6 @@ Dive into the world of database design with this curated collection of **Entity-
 ## 🛠️ Tools Used
 
 - [ERDPlus](https://erdplus.com/): Best website for database applications.
-- **MySQL Workbench**: For applying diagrams to databases.
 - **Draw.io**: For creating diagrams.
 
 ## 📚 Useful Resources
