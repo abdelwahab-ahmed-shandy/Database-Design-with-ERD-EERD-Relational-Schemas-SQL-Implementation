@@ -7,7 +7,7 @@ Dive into the world of database design with this curated collection of **Entity-
 - Understand how to analyze system requirements and convert them into an ERD.
 - Learn to design relational schemas from ERDs.
 - Improve database design skills.
-- Learn to use various tools to create diagrams (e.g., Draw.io, MySQL Workbench, etc.).
+- Learn to use various tools to create diagrams (e.g., Draw.io, erdpluse etc.).
 
 ## 🚀 How to Use
 
