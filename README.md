@@ -20,8 +20,7 @@ Dive into the world of database design with this curated collection of **Entity-
 
 ## 🛠️ Tools Used
 
-- [ERDPlus](https://erdplus.com/): Best website for database applications.
-- **Draw.io**: For creating diagrams.
+- [ERDPlus](https://erdplus.com/) And **Draw.io** :  The Best website to create ERD and Relational Schema ز
 
 ## 📚 Useful Resources
 
