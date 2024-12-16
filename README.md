@@ -1,5 +1,8 @@
 # ER Diagrams And Relational Schemas
 
+![GitHub forks](https://img.shields.io/github/forks/Abdelwahab-Shandy/ER-Diagrams-And-Relational-Schemas?style=social)
+![GitHub stars](https://img.shields.io/github/stars/Abdelwahab-Shandy/ER-Diagrams-And-Relational-Schemas?style=social)
+
 Dive into the world of database design with this curated collection of **Entity-Relationship Diagrams (ERDs)** and **Relational Schemas**. Each project demonstrates real-world use cases, providing clear and visually engaging diagrams to help you master the art of database structuring. Perfect for students, developers, and database enthusiasts looking to create efficient and scalable databases.
 
 ## 🎯 Project Goals
