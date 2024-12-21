@@ -1,3 +1,8 @@
+-- University Database Schema
+-- This script creates the tables and relationships for the University database.
+-- Created by: Abdelwahab Shandy
+-- GitHub Repository: https://github.com/Abdelwahab-Shandy/Enhanced-Entity-Relationship-Diagrams-And-Relational-Schemas
+
 Create DataBase University_DataBase;
 
 Use University_DataBase ;
