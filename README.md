@@ -30,6 +30,12 @@ Dive into the world of database design with this curated collection of **Entity-
 - [The Best Arabic Guide to Learn ERD](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 - [Comprehensive Arabic Database Course](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 
+## 📙 Database Files Included
+- Schema/University ERD Relational Schemas/University_DataBase.sql: SQL script for creating the University database.
+- Diagrams/University ERD Relational Schemas/Relational Schemas(EERD).png: ER diagram for the University database.
+- Diagrams/University ERD Relational Schemas/EERD.png: Relational schema for the University database
+- BackupFile/University ERD Relational Schemas/Backup_DB.bak :Database Backup File
+
 ## 📫 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
