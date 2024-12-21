@@ -1,3 +1,8 @@
+-- Simple Clinic Database Schema
+-- This script creates the tables and relationships for the Simple Clinic database.
+-- Created by: Abdelwahab Shandy
+-- GitHub Repository: https://github.com/Abdelwahab-Shandy/Enhanced-Entity-Relationship-Diagrams-And-Relational-Schemas
+
 Create DataBase Simple_Clinic;
 
 Use Simple_Clinic;
