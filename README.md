@@ -3,14 +3,22 @@
 ![GitHub forks](https://img.shields.io/github/forks/Abdelwahab-Shandy/ER-Diagrams-And-Relational-Schemas?style=social)
 ![GitHub stars](https://img.shields.io/github/stars/Abdelwahab-Shandy/ER-Diagrams-And-Relational-Schemas?style=social)
 
-Dive into the world of database design with this curated collection of **Entity-Relationship Diagrams (ERDs)** and **Relational Schemas**. Each project demonstrates real-world use cases, providing clear and visually engaging diagrams to help you master the art of database structuring. Perfect for students, developers, and database enthusiasts looking to create efficient and scalable databases.
+Explore a structured collection of **Entity-Relationship Diagrams (ERDs)**, **Enhanced Entity-Relationship Diagrams (EERDs)**, **Relational Schemas**, and **SQL Scripts**. This project aims to showcase database design techniques and the practical implementation of database structures using real-world examples. Each file demonstrates how to convert system requirements into visual representations and SQL code for creating and managing databases.
+
+## 🎯 Project Contents
+
+- **ERDs**: Visual representations of system entities and relationships.
+- **EERDs**: Enhanced version of ERDs, including additional concepts like inheritance, aggregation, and more.
+- **Relational Schemas**: Structured presentation of tables and their relationships within a relational database.
+- **SQL Files**: Ready-to-run SQL scripts for implementing the database schema in a database system.
 
 ## 🎯 Project Goals
 
-- Understand how to analyze system requirements and convert them into an ERD.
-- Learn to design relational schemas from ERDs.
-- Improve database design skills.
-- Learn to use various tools to create diagrams (e.g., Draw.io, erdpluse etc.).
+- Learn how to analyze system requirements and translate them into an effective **Entity-Relationship Diagram (ERD)**.
+- Gain the ability to design **Relational Schemas** by converting ERDs into structured database tables and relationships.
+- Enhance your skills in **database design** by applying theoretical knowledge to practical projects.
+- Master using popular diagramming tools such as **Draw.io** and **ERDPlus** to create clear and visually engaging database designs.
+- Understand how to implement the designs by writing SQL code to create the corresponding database schemas.
 
 ## 🚀 How to Use
 
@@ -23,19 +31,28 @@ Dive into the world of database design with this curated collection of **Entity-
 
 ## 🛠️ Tools Used
 
-- [ERDPlus](https://erdplus.com/) And **Draw.io** :  The Best website to create ERD and Relational Schema 
+- [ERDPlus](https://erdplus.com/) and **[Draw.io](https://www.diagrams.net/)**: Powerful and user-friendly tools for creating **Entity-Relationship Diagrams (ERDs)**, **Enhanced Entity-Relationship Diagrams (EERDs)**, and **Relational Schemas**. **Draw.io** (also known as **diagrams.net**) is a versatile diagramming tool that offers a range of features such as:
+  - Intuitive interface for drag-and-drop diagram creation.
+  - Integration with cloud services like **Google Drive**, **OneDrive**, and **Dropbox**.
+  - Offline mode through its desktop app.
+  - Real-time collaboration for team projects.
+  - Easy export options (PNG, JPEG, PDF, etc.).
+  These platforms provide intuitive interfaces to design clear and efficient database structures.
+
 
 ## 📚 Useful Resources
 
 - [The Best Arabic Guide to Learn ERD](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 - [Comprehensive Arabic Database Course](https://programmingadvices.com/p/database-level-1-sql-concepts-and-practice)
 
-## 📙 Database Files Included
-- Schema/University ERD Relational Schemas/University_DataBase.sql: SQL script for creating the University database.
-- Diagrams/University ERD Relational Schemas/Relational Schemas(EERD).png: ER diagram for the University database.
-- Diagrams/University ERD Relational Schemas/EERD.png: Relational schema for the University database
-- BackupFile/University ERD Relational Schemas/Backup_DB.bak :Database Backup File
-
+## 🔧 SQL Command Types 
+```sql
+- DDL ( Data Definition Language)
+- DML ( Data Manipulation Language)
+- DCL (Data Control Language) 
+- TCL (Transaction Control Language)
+- DQL (Data Query Language)
+```
 ## 📫 Connect with Me
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
