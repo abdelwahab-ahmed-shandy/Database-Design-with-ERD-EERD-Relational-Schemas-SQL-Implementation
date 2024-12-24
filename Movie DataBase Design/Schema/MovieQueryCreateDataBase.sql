@@ -1,3 +1,7 @@
+-- Script for creating Movie Database
+-- Author: Abdelwahab Shandy
+-- Description: This script creates a database named Movie_DataBase, along with its related tables for storing information about actors, directors, movies, reviews, and genres. It establishes the necessary relationships between tables.
+
 Create DataBase Movie_DataBase;
 
 use Movie_DataBase;
