@@ -1,3 +1,7 @@
+-- Script for creating Airlines Database
+-- Author: Abdelwahab Shandy
+-- Description: This script creates a database named Airlines_DataBase to manage airline-related data, including employees, airlines, routes, aircrafts, and transactions.
+
 Create DataBase Airlines_DataBase;
 
 Use Airlines_DataBase ;
