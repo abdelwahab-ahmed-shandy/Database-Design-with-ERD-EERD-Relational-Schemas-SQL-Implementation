@@ -1,3 +1,7 @@
+-- Script for creating University Database
+-- Author: Abdelwahab Shandy
+-- Description: This script creates a database named University_DataBase and its related tables for managing university data, including persons, professors, students, courses, and enrollments.
+
 Create DataBase University_DataBase;
 
 Use University_DataBase ;
