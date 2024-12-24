@@ -1,3 +1,7 @@
+-- Script for creating Simple Clinic Database
+-- Author: Abdelwahab Shandy
+-- Description: This script creates a database named Simple_Clinic to manage clinic-related data, including patients, doctors, appointments, medical records, and prescriptions.
+
 Create DataBase Simple_Clinic;
 
 Use Simple_Clinic;
