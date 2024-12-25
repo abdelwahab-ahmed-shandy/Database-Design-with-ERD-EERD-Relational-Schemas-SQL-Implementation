@@ -83,23 +83,11 @@ The primary goal of this project is to showcase best practices in database desig
 
 ---
 
-## 🚀 Getting Started
-### Prerequisites
-- MySQL or PostgreSQL installed
-- SQL client (e.g., MySQL Workbench, DBeaver, or pgAdmin)
-- SQl Server Management
-
 ### Steps
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/Abdelwahab-Shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation.git
    ```
-2. Navigate to the SQLImplementation directory:
-   ```bash
-   cd Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation/SQLImplementation
-   ```
-3. Run the SQL scripts in your preferred database system.
-
 ---
 
 ## 📚 Documentation
