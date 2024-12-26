@@ -2,7 +2,7 @@
 ![License](https://img.shields.io/github/license/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation)
 ![Issues](https://img.shields.io/github/issues/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation)
 ![Stars](https://img.shields.io/github/stars/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation)
-![Language](https://img.shields.io/github/languages/top/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation)
+![Language](https://img.shields.io/github/languages/top/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation?label=SQL)
 ![Commits](https://img.shields.io/github/commit-activity/m/abdelwahab-ahmed-shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation)
 
 ---
