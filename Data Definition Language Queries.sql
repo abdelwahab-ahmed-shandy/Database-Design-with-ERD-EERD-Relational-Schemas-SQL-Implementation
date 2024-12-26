@@ -1,6 +1,6 @@
 --Created By Abdelwahab Shandy
 --Don't Forget To Pray For Me And My Parents
---DDL SQL DATABASE
+--Data Definition Language 
 
 --CREATE DATABASE Statement :
 Create DataBase koko;
