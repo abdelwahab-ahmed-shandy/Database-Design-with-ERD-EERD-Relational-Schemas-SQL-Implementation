@@ -2,7 +2,7 @@
 --Don't Forget To Pray For Me And My Parents
 --Error 
 --===========================
-From  =>> Where  =>> Select  =>> Order By
+From  =>> Where  =>> Select  =>> Order By =>> OFFSET =>> FETCH NEXT 10 Rows Only
 
 
 --===========================
