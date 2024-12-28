@@ -112,3 +112,5 @@ Detailed documentation is available in the respective directories:
 
 ## 📝 License
 This project is licensed under the MIT License. See the LICENSE file for details.
+
+If you benefit from something, do not forget to pray for me and my parents.
