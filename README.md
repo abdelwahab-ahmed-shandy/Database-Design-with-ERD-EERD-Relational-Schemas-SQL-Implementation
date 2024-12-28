@@ -26,28 +26,7 @@ The primary goal of this project is to showcase best practices in database desig
 - **EERDs**: Enhanced version of ERDs, including additional concepts like inheritance, aggregation, and more.
 - **Relational Schemas**: Structured presentation of tables and their relationships within a relational database.
 - **SQL Files**: Ready-to-run SQL scripts for implementing the database schema in a database system.
-
----
-
-## 🎯 Project Goals
-
-- Learn how to analyze system requirements and translate them into an effective **Entity-Relationship Diagram (ERD)**.
-- Gain the ability to design **Relational Schemas** by converting ERDs into structured database tables and relationships.
-- Enhance your skills in **database design** by applying theoretical knowledge to practical projects.
-- Master using popular diagramming tools such as **Draw.io** and **ERDPlus** to create clear and visually engaging database designs.
-- Understand how to implement the designs by writing SQL code to create the corresponding database schemas.
-
----
-
-## 📂 Repository Structure
-
-```plaintext
-├── ERD/                     # Contains Entity-Relationship Diagrams
-├── EERD/                    # Contains Enhanced Entity-Relationship Diagrams
-├── RelationalSchemas/       # Relational schemas derived from diagrams
-├── SQLImplementation/       # SQL scripts for database creation and manipulation
-└── README.md                # Project documentation
-```
+- 
 ---
 
 ## 🚀 How to Use
@@ -101,12 +80,10 @@ Detailed documentation is available in the respective directories:
 
 ---
 
-## 🧑‍💻 Author
-**Abdelwahab Shandy**
-
-- GitHub: [Abdelwahab Shandy](https://github.com/Abdelwahab-Shandy)
-- LinkedIn: [Abdelwahab Shandy](https://www.linkedin.com/in/abdelwahab-shandy/)
-- Medium: [@abdelwahabshandy](https://medium.com/@abdelwahabshandy)
+## 📫 Connect with Me
+[![LinkedIn](https://img.shields.io/badge/Followers-4000-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
+[![Medium](https://img.shields.io/badge/Followers-25-brightgreen?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@abdelwahabshandy)
+[![GitHub](https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdelwahab-shandy)
 
 ---
 
