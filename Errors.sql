@@ -1,5 +1,5 @@
 --Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
+--If you benefit from something, do not forget to pray for me and my parents.
 --Error 
 --===========================
 From  =>> Where  =>> Select  =>> Order By =>> OFFSET =>> FETCH NEXT 10 Rows Only
