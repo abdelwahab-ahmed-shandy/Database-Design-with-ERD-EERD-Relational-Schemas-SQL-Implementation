@@ -109,3 +109,24 @@ CASE
    
 END
 from Employees
+
+--===========================================================================================
+-- Common Table Expression
+--===========================================================================================
+-- Sub-phrase
+Select * From Sales.Employees
+Where Salary > (Select AVG(Salary) From Sales.Employees);
+
+-- Variables
+DECLARE @AvgSalary DECIMAL;
+SELECT @AvgSalary = AVG(Salary) FROM Sales.Employees;
+SELECT *
+FROM Sales.Employees
+WHERE Salary > @AvgSalary;
+
+-- CTE
+With AverageSalary   As(
+	select AVG(Salary) AS AvgSalary From Sales.Employees
+)
+Select * From Sales.Employees 
+Where Salary > (Select AvgSalary From AverageSalary );
