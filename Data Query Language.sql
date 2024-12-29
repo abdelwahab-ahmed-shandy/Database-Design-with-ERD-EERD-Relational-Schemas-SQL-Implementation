@@ -185,6 +185,25 @@ select DepartmentID ,TotalCount=Count(MonthlySalary),
 	   Group By DepartmentID
 	   Having  Count(MonthlySalary) >100 ;
 
+-- Same solution without having :-)
+select * from 
+(
+
+   select DepartmentID, TotalCount=Count(MonthlySalary), 
+	   TotalSum=Sum(MonthlySalary),
+	   Average=Avg(MonthlySalary),
+	   MinSalary=Min(MonthlySalary),
+	   MaxSalary=Max(MonthlySalary) 
+	   
+	   from Employees
+	
+       Group By DepartmentID
+	  
+) R1
+
+where R1.TotalCount> 100;
+
+--===========================
 -- Like :
 --============================
 select * from Employees;
