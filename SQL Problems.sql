@@ -261,7 +261,20 @@ Inner Join
 Where 
 	FuelTypes.FuelTypeName = N'Gas';
 
-
+-- ================================================
+-- Section 12: Get all Makes that runs with GAS
+-- ================================================
+Select Distinct
+	Makes.Make,
+	FuelTypes.FuelTypeName
+From 
+	VehicleDetails
+Inner Join 
+	FuelTypes ON VehicleDetails.FuelTypeID = FuelTypes.FuelTypeID
+Inner Join 
+	Makes ON VehicleDetails.MakeID = Makes.MakeID
+Where 
+	FuelTypes.FuelTypeName = N'Gas';
 
 
 
