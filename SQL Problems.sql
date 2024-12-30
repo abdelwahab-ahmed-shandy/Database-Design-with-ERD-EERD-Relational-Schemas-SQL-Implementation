@@ -247,3 +247,24 @@ Group By
 	FuelTypes.FuelTypeName
 Order By 
 	Makes.Make;
+
+-- ================================================
+-- Section 11: Get all vehicles that runs with GAS
+-- ================================================
+Select 
+	VehicleDetails.*, 
+	FuelTypes.FuelTypeName 
+From 
+	VehicleDetails
+Inner Join 
+	FuelTypes On VehicleDetails.FuelTypeID = FuelTypes.FuelTypeID
+Where 
+	FuelTypes.FuelTypeName = N'Gas';
+
+
+
+
+
+
+
+
