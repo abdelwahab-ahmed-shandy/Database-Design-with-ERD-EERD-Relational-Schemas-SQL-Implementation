@@ -305,6 +305,88 @@ Where
 	FuelTypes.FuelTypeName = N'Gas'
 )VTotalMakesRunOnGas
 
+-- ================================================
+-- Section 14: Count Vehicles by make and order them by NumberOfVehicles from high to low.
+-- ================================================
+Select 
+	Makes.Make,
+	COUNT(*) AS NumberOfVehicles
+From
+	VehicleDetails
+Inner Join Makes On VehicleDetails.MakeID = Makes.MakeID
+Group By 
+	Makes.Make
+Order By
+	NumberOfVehicles DESC;
+
+-- ================================================
+-- Section 15: Get all Makes/Count Of Vehicles that manufactures more than 20K Vehicles
+-- ================================================
+Select 
+	Makes.Make,
+	COUNT(*) AS NumberOfVehicles
+From
+	VehicleDetails
+Inner Join Makes On VehicleDetails.MakeID = Makes.MakeID
+Group By 
+	Makes.Make
+Having
+	Count(*) > 20000
+Order By
+	NumberOfVehicles DESC;
+
+-- ================================================
+-- Section 16: Get all Makes with make starts with 'B'
+-- ================================================
+Select * 
+From 
+	Makes
+Where 
+	Makes.Make Like 'B%';
+
+-- ================================================
+-- Section 17: Get all Makes with make ends with 'W'
+-- ================================================
+Select * 
+From 
+	Makes
+Where 
+	Makes.Make Like '%W';
+
+-- ================================================
+-- Section 18: Get all Makes that manufactures DriveTypeName = FWD
+-- ================================================
+Select Distinct
+	DriveTypes.DriveTypeName,
+	Makes.Make
+From 
+	DriveTypes
+Inner Join  
+	VehicleDetails On DriveTypes.DriveTypeID = VehicleDetails.DriveTypeID
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Where
+	DriveTypes.DriveTypeName = 'FWD';
+
+-- ================================================
+-- Section 19: Get total Makes that Mantufactures DriveTypeName=FWD
+-- ================================================
+Select Count(*) AS MakeFWM
+From
+(
+Select Distinct
+	DriveTypes.DriveTypeName,
+	Makes.Make
+From 
+	DriveTypes
+Inner Join  
+	VehicleDetails On DriveTypes.DriveTypeID = VehicleDetails.DriveTypeID
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Where
+	DriveTypes.DriveTypeName = 'FWD'
+)Result
+
 
 
 
