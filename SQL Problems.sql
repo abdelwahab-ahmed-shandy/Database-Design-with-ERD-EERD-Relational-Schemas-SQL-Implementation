@@ -388,6 +388,125 @@ Where
 )Result
 
 
+-- ================================================
+-- Section 20: Get total vehicles per DriveTypeName Per Make and order them per make asc then per total Desc
+-- ================================================
+SELECT distinct 
+	Makes.Make,
+	DriveTypes.DriveTypeName,
+	Count(*) AS Total
+FROM            
+	DriveTypes 
+INNER JOIN VehicleDetails 
+	ON DriveTypes.DriveTypeID = VehicleDetails.DriveTypeID 
+INNER Join Makes 
+	ON VehicleDetails.MakeID = Makes.MakeID
+Group By 
+	Makes.Make, DriveTypes.DriveTypeName
+Order By 
+	Make ASC, Total Desc;
+
+-- ================================================
+-- Section 21: Get total vehicles per DriveTypeName Per Make then filter only results with total > 10,000
+-- ================================================
+SELECT distinct 
+	Makes.Make,
+	DriveTypes.DriveTypeName,
+	Count(*) AS Total
+FROM            
+	DriveTypes 
+INNER JOIN VehicleDetails 
+	ON DriveTypes.DriveTypeID = VehicleDetails.DriveTypeID 
+INNER Join Makes 
+	ON VehicleDetails.MakeID = Makes.MakeID
+Group By 
+	Makes.Make, DriveTypes.DriveTypeName
+Having 
+	Count(*) > 10000
+Order By 
+	Make ASC, Total Desc;
+
+-- ================================================
+-- Section 22: Get all Vehicles that number of doors is not specified
+-- ================================================
+Select * 
+From
+	VehicleDetails
+Where 
+	VehicleDetails.NumDoors Is Null;
+
+-- ================================================
+-- Section 23: Get Total Vehicles that number of doors is not specified
+-- ================================================
+Select 
+	TotalOfNoSpecifiedDoors = Count(*) 
+From
+	VehicleDetails
+Where 
+	VehicleDetails.NumDoors Is Null;
+
+-- ================================================
+-- Section 24: Get percentage of vehicles that has no doors specified
+-- ================================================
+Select 
+	(
+		CAST((Select Count(*) As TotalWithNoSpecifiedDoors From VehicleDetails
+		Where 
+			NumDoors is Null) As float)
+
+		/
+		
+		CAST( (Select Count(*)as TotalVehicles from VehicleDetails ) as float)
+	
+	)* 100 PercentageOfNoDoorsSpecified
+
+-- ================================================
+-- Section 25: Get MakeID , Make, SubModelName for all vehicles that have SubModelName 'Elite'
+-- ================================================
+Select Distinct
+	VehicleDetails.MakeID,
+	Makes.Make,
+	SubModels.SubModelName
+From 
+	VehicleDetails
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Inner Join 
+	SubModels On VehicleDetails.SubModelID = SubModels.SubModelID
+Where 
+	SubModels.SubModelName = N'Elite';
+
+-- ================================================
+-- Section 26: Get all vehicles that have Engines > 3 Liters and have only 2 doors
+-- ================================================
+Select 
+	*
+From 
+	VehicleDetails
+Where 
+	VehicleDetails.Engine_Liter_Display > 3 And NumDoors = 2
+
+-- ================================================
+-- Section 27: Get make and vehicles that the engine contains 'OHV' and have Cylinders = 4
+-- ================================================
+Select 
+	*
+From 
+	VehicleDetails
+Where 
+	VehicleDetails.Engine Like N'%OHV%' And VehicleDetails.Engine_Cylinders = 4;
+--================
+
+SELECT         
+	Makes.Make,
+	VehicleDetails.*
+FROM            
+	VehicleDetails
+INNER JOIN
+    Makes ON VehicleDetails.MakeID = Makes.MakeID
+WHERE        
+	(VehicleDetails.Engine LIKE '%OHV%') AND (VehicleDetails.Engine_Cylinders = 4);
+
 
 
 
