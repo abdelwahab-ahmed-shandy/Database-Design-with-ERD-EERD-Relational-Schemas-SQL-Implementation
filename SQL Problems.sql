@@ -507,6 +507,124 @@ INNER JOIN
 WHERE        
 	(VehicleDetails.Engine LIKE '%OHV%') AND (VehicleDetails.Engine_Cylinders = 4);
 
+-- ================================================
+-- Section 28: Get all vehicles that their body is 'Sport Utility' and Year > 2020
+-- ================================================
+Select 
+	Bodies.BodyName ,
+	VehicleDetails.*
+From 
+	VehicleDetails
+Inner Join 
+	Bodies ON  VehicleDetails.BodyID = Bodies.BodyID
+Where 
+	Bodies.BodyName = 'Sport Utility' And VehicleDetails.Year > 2020;
+
+-- ================================================
+-- Section 29: Get all vehicles that their Body is 'Coupe' or 'Hatchback' or 'Sedan'
+-- ================================================
+Select 
+	Bodies.BodyName ,
+	VehicleDetails.*
+From 
+	VehicleDetails
+Inner Join 
+	Bodies ON  VehicleDetails.BodyID = Bodies.BodyID
+Where 
+	Bodies.BodyName IN ('Coupe','Hatchback','Sedan');
+--==========
+Select 
+	Bodies.BodyName ,
+	VehicleDetails.*
+From 
+	VehicleDetails
+Inner Join 
+	Bodies ON  VehicleDetails.BodyID = Bodies.BodyID
+Where 
+	Bodies.BodyName = 'Coupe' OR Bodies.BodyName = 'Hatchback' OR  Bodies.BodyName = 'Sedan';
+
+-- ================================================
+-- Section 30: Get all vehicles that their body is 'Coupe' or 'Hatchback' or 'Sedan' and manufactured in year 2008 or 2020 or 2021
+-- ================================================
+Select 
+	Bodies.BodyName ,
+	VehicleDetails.*
+From 
+	VehicleDetails
+Inner Join 
+	Bodies ON  VehicleDetails.BodyID = Bodies.BodyID
+Where 
+	Bodies.BodyName IN ('Coupe','Hatchback','Sedan')
+	AND
+	VehicleDetails.Year IN (2008,2020,2021);
+
+-- ================================================
+-- Section 31: Return found=1 if there is any vehicle made in year 1950
+-- ================================================
+Select Found = 1
+Where 
+Exists
+(
+	Select Top 1 * From VehicleDetails Where VehicleDetails.Year = 1950	
+);
+
+-- ================================================
+-- Section 32: Get all Vehicle_Display_Name, NumDoors and add extra column to describe number of doors by words, and if door is null display 'Not Set'
+-- ================================================
+Select
+	Vehicle_Display_Name ,
+	NumDoors,
+	DoorDescribe = 
+	Case 
+		When NumDoors = 0 Then 'Zero Doors'
+		When NumDoors = 1 Then 'One Doors'
+		When NumDoors = 2 Then 'Two Doors'
+		When NumDoors = 3 Then 'Three Doors'
+		When NumDoors = 4 Then 'Four Doors'
+		When NumDoors = 5 Then 'Five Doors'
+		When NumDoors = 6 Then 'Six Doors'
+		When NumDoors = 8 Then 'Eight Doors'
+		When NumDoors IS NULL Then 'NOT SET'
+		Else 'UNKNOWN' 
+	End
+From
+	VehicleDetails;
+
+-- ================================================
+-- Section 33: Get all Vehicle_Display_Name, year and add extra column to calcuate the age of the car then sort the results by age desc.
+-- ================================================
+Select 
+	Vehicle_Display_Name,
+	Year ,
+	Age = YEAR(GETDATE()) - VehicleDetails.Year
+From 
+	VehicleDetails
+Order By 
+	Age Desc;
+-- ================================================
+-- Section 34: Get all Vehicle_Display_Name, year, Age for vehicles that their age between 15 and 25 years old 
+-- ================================================
+Select 
+	Vehicle_Display_Name,
+	Year ,
+	Age = YEAR(GETDATE()) - VehicleDetails.Year
+From 
+	VehicleDetails
+Where
+	YEAR(GETDATE()) - VehicleDetails.Year Between 15 And 25;
+--===========
+Select * From
+( 
+	Select 
+		VehicleDetails.Vehicle_Display_Name,
+		Year,
+		Age = YEAR(GetDate()) - VehicleDetails.year
+	From 
+		VehicleDetails
+) vAge
+
+Where Age Between 15 And 25;
+
 
 
 
