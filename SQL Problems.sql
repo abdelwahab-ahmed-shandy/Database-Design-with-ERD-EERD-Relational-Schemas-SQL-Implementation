@@ -625,6 +625,192 @@ Select * From
 
 Where Age Between 15 And 25;
 
+-- ================================================
+-- Section 35: Get Minimum Engine CC , Maximum Engine CC , and Average Engine CC of all Vehicles
+-- ================================================
+Select 
+	MaximumEngineCC = Max(VehicleDetails.Engine_CC),
+	MinimumEngineCC = Min(VehicleDetails.Engine_CC),
+	AverageEngineCC = Avg(VehicleDetails.Engine_CC)
+From 
+	VehicleDetails;
+--===================
+Select 
+	 Max(VehicleDetails.Engine_CC) AS MaximumEngineCC,
+	 Min(VehicleDetails.Engine_CC) AS MinimumEngineCC,
+	 Avg(VehicleDetails.Engine_CC) AS AverageEngineCC
+From 
+	VehicleDetails;
+
+-- ================================================
+-- Section 36: Get all vehicles that have the minimum Engine_CC
+-- ================================================
+Select * 
+From
+	VehicleDetails
+Where 
+	(select Min(Engine_CC) AS MinimumEngineCC From VehicleDetails) = Engine_CC;
+
+-- ================================================
+-- Section 37: Get all vehicles that have the Maximum Engine_CC
+-- ================================================
+Select * 
+From 
+	VehicleDetails
+Where 
+	Engine_CC = ( select  Max(Engine_CC) AS MinEngineCC  From VehicleDetails );
+
+-- ================================================
+-- Section 38: Get all vehicles that have Engin_CC below average
+-- ================================================
+Select * 
+From 
+	VehicleDetails
+Where 
+	Engine_CC < ( select  Avg(Engine_CC) AS AverageEngineCC  From VehicleDetails );
+
+-- ================================================
+-- Section 39: Get total vehicles that have Engin_CC above average
+-- ================================================
+Select COUNT(*) AS NumberOfVehiclesAverageEngineCC From
+(
+Select * 
+From 
+	VehicleDetails
+Where 
+	Engine_CC > ( select  Avg(Engine_CC) AS AverageEngineCC  From VehicleDetails )
+)VnumberOfAverageEngineCC
+
+-- ================================================
+-- Section 40: Get all unique Engin_CC and sort them Desc
+-- ================================================
+Select Distinct 
+	Engine_CC
+From 
+	VehicleDetails
+Order By 
+	Engine_CC Desc;
+
+-- ================================================
+-- Section 41: Get the maximum 3 Engine CC
+-- ================================================
+Select Distinct Top 3
+	VehicleDetails.Vehicle_Display_Name,
+	 VehicleDetails.Engine_CC
+From 
+	VehicleDetails
+Order By 
+	Engine_CC Desc;
+
+-- ================================================
+-- Section 41: Get all vehicles that has one of the Max 3 Engine CC
+-- ================================================
+SELECT 
+    Vehicle_Display_Name
+FROM 
+    VehicleDetails
+WHERE 
+    Engine_CC IN 
+	(
+        SELECT DISTINCT TOP 3 Engine_CC 
+        FROM VehicleDetails
+        ORDER BY Engine_CC DESC
+    );
+
+-- ================================================
+-- Section 42: Get all Makes that manufactures one of the Max 3 Engine CC
+-- ================================================
+Select Distinct 
+	Makes.Make
+From
+	VehicleDetails
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Where 
+	(VehicleDetails.Engine_CC 
+		In 
+		(
+		Select Distinct Top 3 Engine_CC
+		From VehicleDetails
+		Order By Engine_CC DESC	
+		))
+Order By 
+	Make ;		
+	
+-- ================================================
+-- Section 43: Get a table of unique Engine_CC and calculate tax per Engine CC
+-- ================================================
+-- 0 to 1000    Tax = 100
+-- 1001 to 2000 Tax = 200
+-- 2001 to 4000 Tax = 300
+-- 4001 to 6000 Tax = 400
+-- 6001 to 8000 Tax = 500
+-- Above 8000   Tax = 600
+-- Otherwise    Tax = 0
+
+Select 
+	Engine_CC, 
+	CASE
+		When Engine_CC Between 0 And 1000 Then 100
+		When Engine_CC Between 1001 And 2000 Then 200
+		When Engine_CC Between 2001 And 4000 Then 300
+		When Engine_CC Between 4001 And 6000 Then 400
+		When Engine_CC Between 6001 And 8000 Then 500
+		When Engine_CC > 8000 Then 600
+		Else 0
+	END AS Tax
+From 
+(
+	Select Distinct Engine_CC From VehicleDetails
+)Vtax
+Order By
+	Engine_CC;
+
+-- ================================================
+-- Section 44: Get Make and Total Number Of Doors Manufactured Per Make
+-- ================================================
+Select 
+	Makes.Make,
+	TotalNumDoors = Sum(VehicleDetails.NumDoors)
+From
+	VehicleDetails
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Group By
+	Make
+Order By 
+	TotalNumDoors Desc;
+
+-- ================================================
+-- Section 45: Get Total Number Of Doors Manufactured by 'Ford'
+-- ================================================
+Select 
+	Makes.Make,
+	TotalNumDoors = Sum(VehicleDetails.NumDoors)
+From
+	VehicleDetails
+Inner Join 
+	Makes On VehicleDetails.MakeID = Makes.MakeID
+Group By
+	Make
+Having
+	Make = 'Ford';
+
+-- ================================================
+-- Section 46: Get Number of Models Per Make
+-- ================================================
+SELECT       
+	Makes.Make, 
+	NumberOfModels = COUNT(*)
+FROM            
+	Makes 
+INNER JOIN
+    MakeModels ON Makes.MakeID = MakeModels.MakeID
+GROUP BY 
+	Makes.Make
+Order By 
+	NumberOfModels Desc;
+
 
 
 
