@@ -812,5 +812,98 @@ Order By
 	NumberOfModels Desc;
 
 
+-- ================================================
+-- Section 47: Get the highest 3 manufacturers that make the highest number of models
+-- ================================================
+ SELECT Top 3    
+	Makes.Make, 
+	NumberOfModels = COUNT(*)
+FROM            
+	Makes 
+INNER JOIN
+    MakeModels ON Makes.MakeID = MakeModels.MakeID
+GROUP BY 
+	Makes.Make
+Order By 
+	NumberOfModels Desc;
+
+-- ================================================
+-- Section 48: Get the highest number of models manufactured
+-- ================================================
+Select MAX(NumberOfModels) AS MaxNumOfModel
+From (
+SELECT    
+	Makes.Make, 
+	NumberOfModels = COUNT(*)
+FROM            
+	Makes 
+INNER JOIN
+    MakeModels ON Makes.MakeID = MakeModels.MakeID
+GROUP BY 
+	Makes.Make
+	)VMaxNumOfModel
+
+-- ================================================
+-- Section 49: Get the highest Manufacturers manufactured the highest number of models , 
+--remember that they could be more than one manufacturer have the same high number of models
+-- ================================================
+SELECT        
+	Makes.Make,
+	NumberOfModels = COUNT(*)
+FROM            
+	Makes 
+INNER JOIN
+	MakeModels ON Makes.MakeID = MakeModels.MakeID
+GROUP BY
+	Makes.Make
+Having 
+	COUNT(*) = (select Max(NumberOfModels) as MaxNumberOfModels
+				from
+					(
+						SELECT   
+							MakeID,
+							NumberOfModels = COUNT(*)
+						FROM       
+							MakeModels
+						GROUP BY 
+							MakeID							
+					) R1
+				)
+
+-- ================================================
+-- Section 50: Get the Lowest Manufacturers manufactured the lowest number of models ,
+-- remember that they could be more than one manufacturer have the same lowest number of models
+-- ================================================
+SELECT        
+	Makes.Make,
+	NumberOfModels = COUNT(*)
+FROM            
+	Makes 
+INNER JOIN
+	MakeModels ON Makes.MakeID = MakeModels.MakeID
+GROUP BY
+	Makes.Make
+Having 
+	COUNT(*) = (select Min(NumberOfModels) as MaxNumberOfModels
+				from
+					(
+						SELECT   
+							MakeID,
+							NumberOfModels = COUNT(*)
+						FROM       
+							MakeModels
+						GROUP BY 
+							MakeID							
+					) R1
+				)
+
+-- ================================================
+-- Section 51: Get all Fuel Types , each time the result should be showed in random order
+-- ================================================
+Select *
+From
+	FuelTypes
+Order By 
+	NEWID();
 
 
