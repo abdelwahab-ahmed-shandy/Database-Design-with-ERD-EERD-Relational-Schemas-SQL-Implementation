@@ -130,3 +130,23 @@ With AverageSalary   As(
 )
 Select * From Sales.Employees 
 Where Salary > (Select AvgSalary From AverageSalary );
+
+--====================================
+-- OFFSET FETCH
+--====================================
+SELECT columns
+FROM table_name
+ORDER BY column_name
+OFFSET number_of_rows_to_skip ROWS
+FETCH NEXT number_of_rows_to_return ROWS ONLY;
+
+-- EX :
+-- Retrieve the first 10 patients from the Patient table, starting from the 5th record.
+Select * 
+
+From
+	Patients
+Order By 
+	Patients.PatientURNumber
+Offset 5 Rows
+Fetch Next 10 Rows Only ;
