@@ -25,6 +25,8 @@
 2. Browse the folders to select the desired project.
 3. Open the ERD or schema files using the appropriate tool.
 
+---
+
 ## 🛠️ Tools & Technologies
 - **Diagram Tools**: Draw.io, Lucidchart , ERDPlus
 - **Database Systems**: MySQL, PostgreSQL , SQLServer
@@ -50,13 +52,6 @@
   - Sample data population
 - Clear documentation and logical flow from design to implementation.
 
----
-
-### Steps
-Clone the repository:
-   ```bash
-   git clone https://github.com/Abdelwahab-Shandy/Database-Design-with-ERD-EERD-Relational-Schemas-SQL-Implementation.git
-   ```
 ---
 
 ## 📫 Connect with Me
