@@ -7,19 +7,6 @@
 
 ---
 
-## 📋 Project Overview
-This repository demonstrates the process of designing databases using:
-
-- **Entity-Relationship Diagrams (ERDs)**
-- **Enhanced Entity-Relationship Diagrams (EERDs)**
-- **Relational Schemas**
-- **SQL Implementation**
-
-### Objective
-The primary goal of this project is to showcase best practices in database design, starting from conceptual modeling to logical structuring and implementing the design in SQL.
-
----
-
 ## 🎯 Project Contents
 
 - **ERDs**: Visual representations of system entities and relationships.
@@ -72,22 +59,10 @@ Clone the repository:
    ```
 ---
 
-## 📚 Documentation
-Detailed documentation is available in the respective directories:
-- ERD and EERD: Explain the design process.
-- Relational Schemas: Covers schema generation.
-- SQLImplementation: Provides SQL scripts and usage instructions.
-
----
-
 ## 📫 Connect with Me
 [![LinkedIn](https://img.shields.io/badge/Followers-4000-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/abdelwahab-shandy/)
 [![Medium](https://img.shields.io/badge/Followers-25-brightgreen?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@abdelwahabshandy)
 [![GitHub](https://img.shields.io/badge/GitHub-333333?style=for-the-badge&logo=github&logoColor=white)](https://github.com/abdelwahab-shandy)
 
 ---
-
-## 📝 License
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-If you benefit from something, do not forget to pray for me and my parents.
+If you get bored , Make up a programming problem ").
