@@ -1,6 +1,4 @@
---Created By Abdelwahab Shandy
---If you benefit from something, do not forget to pray for me and my parents.
---Error 
+--Errors 
 --===========================
 From  =>> Where  =>> Select  =>> Order By =>> OFFSET =>> FETCH NEXT 10 Rows Only
 
@@ -11,3 +9,6 @@ From  =>> Where  =>> Select  =>> Order By =>> OFFSET =>> FETCH NEXT 10 Rows Only
 use [YourDatabaseName] EXEC sp_changedbowner 'sa' 
 
 --===========================
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

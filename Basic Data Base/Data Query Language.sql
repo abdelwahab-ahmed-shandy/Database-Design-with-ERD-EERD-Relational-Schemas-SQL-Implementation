@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Data Query Language (DQL) 
 
 -- SELECT
@@ -258,3 +256,7 @@ Where firstName like 'Mohamm[ae]d';
 --You can use Not 
 select ID, FirstName, LastName from Employees
 Where firstName Not like 'Mohamm[ae]d';
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

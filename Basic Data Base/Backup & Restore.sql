@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Backup & Restore Database
 
 -- SQL BACKUP DATABASE Statement : 
@@ -14,3 +12,7 @@ WITH DIFFERENTIAL;
 -- Restore Database From Backup
 RESTORE DATABASE MyDatabase1
 FROM DISK = 'C:\MyDatabase1.bak';
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

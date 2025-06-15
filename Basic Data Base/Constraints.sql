@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Constraints 
 
 -- Identity Field (Auto Increment)
@@ -244,3 +242,8 @@ CREATE BITMAP INDEX idx_status ON employees(status);
 
 --Reverse Key Index :
 CREATE INDEX idx_reverse_key ON users(REVERSE(id));
+
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

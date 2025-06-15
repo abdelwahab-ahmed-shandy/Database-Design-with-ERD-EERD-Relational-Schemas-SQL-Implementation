@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Data Definition Language 
 
 --CREATE DATABASE Statement :
@@ -55,3 +53,7 @@ exec sp_rename 'old_table_name', 'new_table_name';
 --Modify Column in a Table (Data type)
 ALTER TABLE table_name
 ALTER COLUMN soso VARCHAR(100);
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

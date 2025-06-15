@@ -906,4 +906,7 @@ From
 Order By 
 	NEWID();
 
+-----------------------------------------------------------
 
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

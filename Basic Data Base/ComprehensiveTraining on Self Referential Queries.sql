@@ -81,3 +81,8 @@ Inner Join
 	Employees AS Managers On Employees.ManagerID = Managers.EmployeeID
 Where 
 	Managers.Name = 'Mohammed';
+
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

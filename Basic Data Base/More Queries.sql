@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --More Queries
   
 --	EXISTS 
@@ -150,3 +148,8 @@ Order By
 	Patients.PatientURNumber
 Offset 5 Rows
 Fetch Next 10 Rows Only ;
+
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

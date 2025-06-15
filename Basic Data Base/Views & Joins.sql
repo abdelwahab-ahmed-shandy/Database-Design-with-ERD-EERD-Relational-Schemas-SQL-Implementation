@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Views & Joins
 
 -- Views
@@ -66,3 +64,7 @@ FROM Customers
 FULL OUTER JOIN Orders 
 ON Customers.CustomerID = Orders.CustomerID
 
+
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

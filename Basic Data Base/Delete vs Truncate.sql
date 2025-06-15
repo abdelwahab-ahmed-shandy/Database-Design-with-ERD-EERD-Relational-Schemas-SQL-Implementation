@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Delete vs Truncate statement
 
 USE DB1;
@@ -19,7 +17,6 @@ Delete from Departments;
 Truncate table Departments;
 
 
-
-
-
-
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents

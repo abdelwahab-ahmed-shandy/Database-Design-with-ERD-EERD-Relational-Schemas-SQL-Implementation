@@ -1,5 +1,3 @@
---Created By Abdelwahab Shandy
---Don't Forget To Pray For Me And My Parents
 --Data Manipulation Language
 
 -- INSERT INTO Statement : 
@@ -119,3 +117,6 @@ SELECT column1, column2, column3, ...
 FROM table1
 WHERE condition;
 
+-----------------------------------------------------------
+--Created By Abdelwahab Shandy
+--Don't Forget To Pray For Me And My Parents
